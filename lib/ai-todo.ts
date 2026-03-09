@@ -2,7 +2,7 @@
 // AI-powered voice-to-todo utility using AssemblyAI for transcription
 // and local keyword extraction for structured fields.
 
-const ASSEMBLYAI_API_KEY = 'f9e5f43d87bd42d6b467c7573f860839';
+const ASSEMBLYAI_API_KEY = process.env.EXPO_PUBLIC_ASSEMBLYAI_API_KEY || '';
 const ASSEMBLYAI_BASE = 'https://api.assemblyai.com/v2';
 
 // ── Priority keywords ─────────────────────────────────────────────────────────
